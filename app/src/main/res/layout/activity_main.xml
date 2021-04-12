@@ -11,17 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="No"
+        android:text="@string/btNoText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btYes"
-        app:layout_constraintTop_toBottomOf="@+id/twSentence" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSentence" />
 
     <TextView
-        android:id="@+id/twSentence"
+        android:id="@+id/tvSentence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Es Lima la capital de Perú?"
+        android:text="@string/tvSentenceText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,10 +36,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Si"
+        android:text="@string/btYesText"
         app:layout_constraintEnd_toStartOf="@+id/btNo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/twSentence" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSentence" />
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btNextText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
